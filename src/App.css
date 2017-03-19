@@ -1,0 +1,79 @@
+.form-group {
+  margin-right: 10px !important; }
+
+.form-group input {
+  padding-left: 10px; }
+
+.toggle-slide-button {
+  display: inline-block;
+  border-radius: 32px;
+  background: #eaeae9;
+  padding: 5px;
+  vertical-align: middle;
+  height: 30px;
+  margin-left: 10px; }
+
+.toggle-slide-button .switch-text {
+  vertical-align: top;
+  font-size: smaller; }
+
+.toggle-slide-button .switch-button {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+  /* Rounded sliders */ }
+
+.toggle-slide-button .switch-button input {
+  display: none; }
+
+.toggle-slide-button .switch-button .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggle-slide-button .switch-button .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 35px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggle-slide-button .switch-button input + .slider:after {
+  color: white;
+  font-size: smaller; }
+
+.toggle-slide-button .switch-button input:checked + .slider {
+  background-color: #2196F3; }
+
+.toggle-slide-button .switch-button input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+.toggle-slide-button .switch-button input:checked + .slider:after {
+  content: "ON";
+  padding-left: 7px; }
+
+.toggle-slide-button .switch-button input + .slider:after {
+  content: "OFF";
+  padding-left: 60%; }
+
+.toggle-slide-button .switch-button input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+.toggle-slide-button .switch-button .slider.round {
+  border-radius: 34px; }
+
+.toggle-slide-button .switch-button .slider.round:before {
+  border-radius: 34px; }
